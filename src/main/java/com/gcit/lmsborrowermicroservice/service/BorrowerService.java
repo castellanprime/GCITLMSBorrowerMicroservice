@@ -75,7 +75,7 @@ public class BorrowerService {
 	
 	@Transactional
 	@ResponseStatus(HttpStatus.CREATED)
-	@RequestMapping(value = "/borrowers/{cardNo}/checkout", 
+	@RequestMapping(value = "/borrowers/{cardNo}/checkouts", 
 		method = RequestMethod.POST, 
 		consumes = "application/json",
 		produces = "application/json")
@@ -98,7 +98,7 @@ public class BorrowerService {
 	
 	@Transactional
 	@ResponseStatus(HttpStatus.OK)
-	@RequestMapping(value = "/borrowers/{cardNo}/return", 
+	@RequestMapping(value = "/borrowers/{cardNo}/returns", 
 		method = RequestMethod.PATCH, 
 		consumes = "application/json")
 	public BookLoan returnBook(@RequestBody BookLoanInputDTO bookLoanInputDto, 

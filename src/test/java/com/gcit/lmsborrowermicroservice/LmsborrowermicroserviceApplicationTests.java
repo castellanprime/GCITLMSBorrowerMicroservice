@@ -1,4 +1,4 @@
-package com.gcitlmsborrowermicroservice;
+package com.gcit.lmsborrowermicroservice;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
